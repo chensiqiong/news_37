@@ -10,6 +10,7 @@ import MyCollection from '@/pages/myCollection.vue'
 import Index from '@/pages/index.vue'
 import ArticleDetails from '@/pages/articleDetails.vue'
 import GoodComments from '@/pages/goodComments.vue'
+import Search from '@/pages/search.vue'
 
 Vue.use(VueRouter)
 
@@ -55,6 +56,11 @@ const router = new VueRouter({
     name: 'GoodComments',
     path: '/goodComments/:id',
     component: GoodComments
+  },
+  {
+    name: 'Search',
+    path: '/search',
+    component: Search
   }
   ]
 })

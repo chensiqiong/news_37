@@ -45,3 +45,10 @@ export const sendComment = (id, data) => {
     data
   })
 }
+
+// 搜索文章
+export const searchArticle = keyword => {
+  return axios({
+    url: '/post_search?keyword=' + keyword
+  })
+}
